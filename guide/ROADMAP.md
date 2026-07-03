@@ -55,11 +55,11 @@
 | 2 | 首次 PyPI 发布 (3个包) | P0 | guide完成 | 10min |
 | 3 | GitHub 镜像仓库 | P2 | GitHub账号 | 30min |
 | 4 | 博客: "为什么AI工具需要能力菜单" | P1 | - | ✅ 已发布 (掘金/知乎) |
-| 5 | 博客: "OODA vs LangChain Chain" | P2 | - | 3h |
+| 5 | 博客: "OODA vs LangChain Chain" | P2 | - | ✅ 已完成 |
 | 6 | 写 examples/ 下5个demo | P2 | - | ✅ 已完成 |
-| 7 | 搭建 GitHub Pages 文档站 | P2 | #3 | 2h |
-| 8 | Open-WebUI 集成 PR | P3 | #3 | 8h |
-| 9 | 企业版定价方案 | P3 | - | 3h |
+| 7 | 搭建 GitHub Pages 文档站 | P2 | #3 | ✅ 已部署 |
+| 8 | Open-WebUI 集成 PR | P3 | #3 | 8h (方案已调研) |
+| 9 | 企业版定价方案 | P3 | - | ✅ 已完成 |
 
 ---
 
