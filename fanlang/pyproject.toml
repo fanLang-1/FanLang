@@ -1,9 +1,9 @@
 [build-system]
 requires = ["setuptools>=68", "wheel"]
-build-backend = "setuptools.backends._legacy:_Backend"
+build-backend = "setuptools.build_meta"
 
 [project]
-name = "fanlang"
+name = "pyfanlang"
 version = "0.1.0"
 description = "FanLang -- AI interaction in Chinese characters. A UI/interaction layer for open-source AI projects."
 readme = "README.md"
