@@ -1,11 +1,11 @@
-# fanlang-langchain
+# pyfanlang-langchain
 
 凡语 FanLang 的 LangChain 集成包。
 
 ## 安装
 
 ```bash
-pip install fanlang-langchain
+pip install pyfanlang-langchain
 ```
 
 ## 使用
@@ -21,7 +21,6 @@ result = agent.run("帮我写一篇科普文章")
 retriever = FanLangRetriever.from_documents(docs)
 ```
 
-## 依赖
+## License
 
-- `fanlang>=0.1.0`
-- `langchain>=0.2`
+MIT

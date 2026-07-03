@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "pyfanlang"
-version = "0.1.0"
+version = "0.1.1"
 description = "FanLang -- AI interaction in Chinese characters. A UI/interaction layer for open-source AI projects."
 readme = "README.md"
 license = {text = "MIT"}
@@ -27,4 +27,5 @@ full = [
 ]
 
 [tool.setuptools.packages.find]
-include = ["fanlang*"]
+where = ["src"]
+include = ["fanlang", "fanlang.*"]
