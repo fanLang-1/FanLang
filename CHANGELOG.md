@@ -1,8 +1,12 @@
 # 变更日志
 
-## 0.1.0 (2026-07-03)
+## 0.1.1 (2026-07-03)
 
-初始发布 — 凡语 FanLang 第一个公开版本。
+- **所有包**: PyPI 全量发布（`pyfanlang` / `pyfanlang-streamlit` / `pyfanlang-langchain`）
+- **核心包**: 改用 src-layout 确保 wheel 正确包含源代码
+- **修复**: `seminar.py` 字段名 bug + `ooda.py` 调用链修复
+- **新增**: README 文档修复（三个包都有独立 README）
+
 
 ### 核心包 `fanlang`
 

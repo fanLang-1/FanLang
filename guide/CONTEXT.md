@@ -85,7 +85,6 @@
 
 | 优先级 | 事项 | 阻塞 |
 |:--|:--|:--|
-| P1 | PyPI 发布 `pyfanlang-streamlit` + `pyfanlang-langchain` | - |
 | P2 | 博客发布（掘金/知乎） | - |
 | P3 | Open-WebUI 集成 | - |
 

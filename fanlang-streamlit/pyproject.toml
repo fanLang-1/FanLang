@@ -4,12 +4,12 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "pyfanlang-streamlit"
-version = "0.1.0"
+version = "0.1.1"
 description = "FanLang — Streamlit integration. Pre-built symbol bar and interaction components."
 readme = "README.md"
 license = {text = "MIT"}
 requires-python = ">=3.10"
-dependencies = ["streamlit>=1.28", "pyfanlang>=0.1.0"]
+dependencies = ["streamlit>=1.28", "pyfanlang>=0.1.1"]
 
 [tool.setuptools]
 packages = {find = {include = ["fanlang_streamlit", "fanlang_streamlit.*"]}}

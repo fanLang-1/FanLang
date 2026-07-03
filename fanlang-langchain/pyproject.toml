@@ -4,12 +4,12 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "pyfanlang-langchain"
-version = "0.1.0"
+version = "0.1.1"
 description = "FanLang — LangChain integration. OODA Agent and FanLang Retriever for LangChain apps."
 readme = "README.md"
 license = {text = "MIT"}
 requires-python = ">=3.10"
-dependencies = ["langchain>=0.2", "pyfanlang>=0.1.0"]
+dependencies = ["langchain>=0.2", "pyfanlang>=0.1.1"]
 
 [project.optional-dependencies]
 rag = ["pyfanlang[rag]"]
