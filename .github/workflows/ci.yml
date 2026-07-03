@@ -1,0 +1,102 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.10", "3.11", "3.12"]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install core package + test deps
+        run: |
+          pip install --upgrade pip
+          pip install fanlang
+          pip install pytest pytest-mock
+
+      - name: Run core tests
+        run: |
+          python -m pytest tests/ -v --tb=short
+
+  test-streamlit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+
+      - name: Install streamlit package + deps
+        run: |
+          pip install --upgrade pip
+          pip install streamlit
+          pip install pytest pytest-mock
+
+      - name: Run streamlit tests
+        run: |
+          # Create junction for import compatibility
+          ln -sf fanlang-streamlit fanlang_streamlit
+          python -m pytest tests/test_streamlit_*.py -v --tb=short
+
+  test-langchain:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+
+      - name: Install langchain package + deps
+        run: |
+          pip install --upgrade pip
+          pip install langchain langchain-core
+          pip install pytest pytest-mock
+
+      - name: Run langchain tests
+        run: |
+          ln -sf fanlang-langchain fanlang_langchain
+          python -m pytest tests/test_langchain_*.py -v --tb=short
+
+  build:
+    runs-on: ubuntu-latest
+    needs: [test, test-streamlit, test-langchain]
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+
+      - name: Install build tools
+        run: pip install build
+
+      - name: Build all packages
+        run: |
+          for pkg in fanlang fanlang-streamlit fanlang-langchain; do
+            echo "Building $pkg..."
+            python -m build --wheel "$pkg"
+          done
+
+      - name: List artifacts
+        run: |
+          for pkg in fanlang fanlang-streamlit fanlang-langchain; do
+            ls -la "$pkg/dist/" 2>/dev/null && echo "---"
+          done

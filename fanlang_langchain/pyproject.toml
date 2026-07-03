@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "fanlang-langchain"
+version = "0.1.0"
+description = "FanLang — LangChain integration. OODA Agent and FanLang Retriever for LangChain apps."
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+dependencies = ["langchain>=0.2", "fanlang>=0.1.0"]
+
+[project.optional-dependencies]
+rag = ["fanlang[rag]"]

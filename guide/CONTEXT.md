@@ -24,6 +24,15 @@
 | `fanlang-streamlit` | Streamlit 插件 (render_symbol_bar) | ✅ 已实现 |
 | `fanlang-langchain` | LangChain 集成 (OODAAgent+Retriever) | ✅ 已实现 |
 
+### 质量保障
+
+| 项 | 值 |
+|:--|:--|
+| 测试用例 | 413 个 (pytest) |
+| 示例应用 | 5 个 (examples/) |
+| CI | GitHub Actions (.github/workflows/ci.yml) |
+| CHANGELOG | ✅ CHANGELOG.md |
+
 ### 原始项目遗迹
 
 | 目录 | 来源 |
@@ -47,6 +56,13 @@
 ## 【改】最近变更
 
 ```
+2026-07-03 · 测试体系 + 示例应用 + CHANGELOG + CI
+            - 413 个测试用例 (fanlang/streamlit/langchain)
+            - 5 个示例应用 (examples/)
+            - CHANGELOG.md 版本历史
+            - GitHub Actions CI (.github/workflows/ci.yml)
+            - repaired: seminar.py sym.name → sym.name_cn bug
+            - repaired: ooda.py act() 使用 _chat 统一出口
 2026-07  · d8e9a12  feat: 盗火者研讨厅 (seminar.py + 论文01+02)
 2026-07  · 828da8e  chore: 加密钥保护 (.fanlang.json → .gitignore)
 2026-07  · 4153cba  feat: publish.py 自动化中间层
@@ -69,11 +85,10 @@
 
 | 优先级 | 事项 | 阻塞 |
 |:--|:--|:--|
-| P0 | 完成 guide/ 文档体系 | - |
-| P1 | 首次 PyPI 发布（运行 publish --all） | - |
-| P2 | GitHub 镜像仓库 | GitHub 账号 |
-| P3 | 博客发布（掘金/知乎） | - |
-| P4 | Open-WebUI 集成 | - |
+| P0 | 首次 PyPI 发布（运行 publish --all） | - |
+| P1 | GitHub 镜像仓库 | GitHub 账号 |
+| P2 | 博客发布（掘金/知乎） | - |
+| P3 | Open-WebUI 集成 | - |
 
 ---
 

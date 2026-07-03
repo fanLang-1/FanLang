@@ -302,7 +302,8 @@ def show_status():
             content = toml.read_text(encoding="utf-8")
             for line in content.split("\n"):
                 if 'version' in line and '=' in line:
-                    print(f"    {pkg}: {line.strip().split('=')[-1].strip().strip('\"')}")
+                    ver = line.strip().split("=")[-1].strip().strip('"')
+                    print(f"    {pkg}: {ver}")
                     break
 
     print(f"\n  待推送更改:")

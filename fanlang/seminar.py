@@ -63,7 +63,7 @@ class Role:
         sym = self._symbol
         lines = [
             f"你是 {self.name}，{self.expertise}。",
-            f"你的核心能力是【{sym.char}】{sym.name}：{sym.description}。",
+            f"你的核心能力是【{sym.char}】{sym.name_cn}：{sym.description}。",
             f"性格：{self.personality}。",
             "",
             "任务规则：",

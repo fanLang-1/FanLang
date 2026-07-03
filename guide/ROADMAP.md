@@ -15,7 +15,11 @@
 ✅ 研讨厅引擎 (seminar.py)
 ✅ 论文文档 (paper-01, paper-02)
 ✅ 自动化中间层 (publish.py)
-🚧 上下文文档体系 (guide/)
+✅ 上下文文档体系 (guide/)
+✅ 测试体系 (413 个测试用例, pytest)
+✅ 示例应用 (5 个 demo: 符号/OODA/终端/研讨厅/RAG)
+✅ CHANGELOG.md
+✅ GitHub Actions CI (.github/workflows/ci.yml)
 ⬜ 首次 PyPI 发布
 ⬜ GitHub 镜像仓库
 ```
@@ -47,12 +51,12 @@
 
 | # | 事项 | 优先级 | 依赖 | 预计工时 |
 |:--|:--|:--|:--|:--|
-| 1 | 完成 guide/ 文档体系 | P0 | - | 1h |
+| 1 | 完成 guide/ 文档体系 | P0 | - | ✅ 已完成 |
 | 2 | 首次 PyPI 发布 (3个包) | P0 | guide完成 | 10min |
-| 3 | GitHub 镜像仓库 | P1 | GitHub账号 | 30min |
-| 4 | 博客: "为什么AI工具需要能力菜单" | P1 | - | 2h |
+| 3 | GitHub 镜像仓库 | P2 | GitHub账号 | 30min |
+| 4 | 博客: "为什么AI工具需要能力菜单" | P1 | - | ✅ 已完成 |
 | 5 | 博客: "OODA vs LangChain Chain" | P2 | - | 3h |
-| 6 | 写 examples/ 下5个demo | P2 | - | 5h |
+| 6 | 写 examples/ 下5个demo | P2 | - | ✅ 已完成 |
 | 7 | 搭建 GitHub Pages 文档站 | P2 | #3 | 2h |
 | 8 | Open-WebUI 集成 PR | P3 | #3 | 8h |
 | 9 | 企业版定价方案 | P3 | - | 3h |

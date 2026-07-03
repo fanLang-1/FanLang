@@ -263,16 +263,15 @@ class OODA:
         if self._agent_func:
             return self._agent_func(decision["symbol_char"], decision["user_input"])
 
-        # 默认使用 Ollama 生成
+        # 默认使用 LLM 生成（通过 self._chat 统一出口）
         sym = get_symbol(decision.get("symbol_char"))
         system_prompt = sym.prompt_template if sym else "你是有用的助手。用中文回答。"
 
-        return _ollama_chat(
+        return self._chat(
             [
                 {"role": "system", "content": system_prompt},
                 {"role": "user", "content": decision["user_input"]},
             ],
-            model=self.model,
         )
 
     def observe(self, user_input: str, result: str) -> Dict[str, Any]:
