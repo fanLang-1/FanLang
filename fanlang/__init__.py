@@ -65,6 +65,20 @@ from fanlang.wolfpack import (
     WolfPackRouter,
 )
 
+# 盗火者研讨厅 — 多智能体组织化协作
+from fanlang.seminar import (
+    SeminarHall,
+    Role,
+    RoundResult,
+    PipelineOrg,
+    PanelOrg,
+    AdversarialOrg,
+    quick_seminar,
+    quick_pipeline,
+    quick_panel,
+    quick_adversarial,
+)
+
 __all__ = [
     # 符号
     "Symbol",
@@ -104,6 +118,17 @@ __all__ = [
     "REASON_MODEL",
     "VISION_MODEL",
     "WolfPackRouter",
+    # 研讨厅
+    "SeminarHall",
+    "Role",
+    "RoundResult",
+    "PipelineOrg",
+    "PanelOrg",
+    "AdversarialOrg",
+    "quick_seminar",
+    "quick_pipeline",
+    "quick_panel",
+    "quick_adversarial",
 ]
 
 __version__ = "0.1.0"
