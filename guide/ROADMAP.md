@@ -54,7 +54,7 @@
 | 1 | 完成 guide/ 文档体系 | P0 | - | ✅ 已完成 |
 | 2 | 首次 PyPI 发布 (3个包) | P0 | guide完成 | 10min |
 | 3 | GitHub 镜像仓库 | P2 | GitHub账号 | 30min |
-| 4 | 博客: "为什么AI工具需要能力菜单" | P1 | - | ✅ 已完成 |
+| 4 | 博客: "为什么AI工具需要能力菜单" | P1 | - | ✅ 已发布 (掘金/知乎) |
 | 5 | 博客: "OODA vs LangChain Chain" | P2 | - | 3h |
 | 6 | 写 examples/ 下5个demo | P2 | - | ✅ 已完成 |
 | 7 | 搭建 GitHub Pages 文档站 | P2 | #3 | 2h |
