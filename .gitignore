@@ -27,6 +27,9 @@ Thumbs.db
 chroma_db/
 indexed_files.json
 
+# Secrets — DO NOT COMMIT
+.fanlang.json
+
 # Notebooks
 .ipynb_checkpoints/
 
