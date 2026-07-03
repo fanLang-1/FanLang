@@ -56,8 +56,7 @@ nav:
     - 治理: guide/govern.md
   - 博客:
     - 为什么 AI 工具需要能力菜单: blog/capability-menu.md
-    - OODA vs LangChain Chain: 两种AI交互范式的对决: blog/ooda-vs-langchain.md
-  - 企业版: pricing.md
+    - "OODA vs LangChain Chain: 两种AI交互范式的对决": blog/ooda-vs-langchain.md
   - 关于: about.md
 
 markdown_extensions:
