@@ -85,8 +85,7 @@
 
 | 优先级 | 事项 | 阻塞 |
 |:--|:--|:--|
-| P0 | 首次 PyPI 发布（运行 publish --all） | - |
-| P1 | GitHub 镜像仓库 | GitHub 账号 |
+| P1 | PyPI 发布 `pyfanlang-streamlit` + `pyfanlang-langchain` | - |
 | P2 | 博客发布（掘金/知乎） | - |
 | P3 | Open-WebUI 集成 | - |
 
