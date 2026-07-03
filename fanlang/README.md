@@ -1,5 +1,14 @@
 # pyfanlang
 
+<p align="center">
+  <img src="../assets/banner.svg" alt="凡语 FanLang Banner" width="80%">
+</p>
+
+<p align="center">
+  <a href="https://pypi.org/project/pyfanlang/"><img src="https://img.shields.io/pypi/v/pyfanlang?color=blue" alt="PyPI"></a>
+  <a href="https://github.com/fanLang-1/FanLang"><img src="https://img.shields.io/badge/source-GitHub-blue" alt="GitHub"></a>
+</p>
+
 凡语 FanLang — AI interaction in Chinese characters.
 
 ## 安装

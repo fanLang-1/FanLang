@@ -1,11 +1,20 @@
-# FanLang Streamlit
+# pyfanlang-streamlit
 
-FanLang 符号系统的 Streamlit 集成插件，提供符号按钮栏、符号选择器和术语提示卡片等预构建组件。
+<p align="center">
+  <img src="../assets/banner.svg" alt="凡语 FanLang Banner" width="80%">
+</p>
+
+<p align="center">
+  <a href="https://pypi.org/project/pyfanlang-streamlit/"><img src="https://img.shields.io/pypi/v/pyfanlang-streamlit?color=blue" alt="PyPI"></a>
+  <a href="https://github.com/fanLang-1/FanLang"><img src="https://img.shields.io/badge/source-GitHub-blue" alt="GitHub"></a>
+</p>
+
+凡语 FanLang 的 Streamlit 集成插件，提供符号按钮栏、符号选择器和术语提示卡片等预构建组件。
 
 ## 安装
 
 ```bash
-pip install fanlang-streamlit
+pip install pyfanlang-streamlit
 ```
 
 ## 快速开始

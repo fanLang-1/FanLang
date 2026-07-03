@@ -1,6 +1,10 @@
 # 凡语 FanLang
 
 <p align="center">
+  <img src="assets/banner.svg" alt="凡语 FanLang Banner" width="100%">
+</p>
+
+<p align="center">
   <strong>用中文单字操控 AI，一行代码接入交互层。</strong><br>
   <em>AI interaction in Chinese characters — one import, one line.</em>
 </p>
@@ -10,7 +14,15 @@
   <a href="#凡语解决了什么"><strong>为什么凡语</strong></a> ·
   <a href="#组件"><strong>组件</strong></a> ·
   <a href="#安装"><strong>安装</strong></a> ·
-  <a href="https://github.com/desshu/FanLang/wiki"><strong>文档</strong></a>
+  <a href="https://fanlang-1.github.io/FanLang/"><strong>文档站</strong></a>
+</p>
+
+<p align="center">
+  <a href="https://pypi.org/project/pyfanlang/"><img src="https://img.shields.io/pypi/v/pyfanlang?color=blue&label=pyfanlang" alt="PyPI"></a>
+  <a href="https://pypi.org/project/pyfanlang-streamlit/"><img src="https://img.shields.io/pypi/v/pyfanlang-streamlit?color=blue&label=pyfanlang-streamlit" alt="PyPI"></a>
+  <a href="https://pypi.org/project/pyfanlang-langchain/"><img src="https://img.shields.io/pypi/v/pyfanlang-langchain?color=blue&label=pyfanlang-langchain" alt="PyPI"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-green" alt="MIT"></a>
+  <a href="https://github.com/fanLang-1/FanLang/actions"><img src="https://img.shields.io/github/actions/workflow/status/fanLang-1/FanLang/ci.yml?branch=main" alt="CI"></a>
 </p>
 
 ---

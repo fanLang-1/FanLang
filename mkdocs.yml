@@ -1,0 +1,89 @@
+site_name: 凡语 FanLang
+site_description: AI interaction in Chinese characters — one import, one line
+site_url: https://fanlang-1.github.io/FanLang/
+repo_url: https://github.com/fanLang-1/FanLang
+repo_name: fanLang-1/FanLang
+
+theme:
+  name: material
+  language: zh
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: amber
+      toggle:
+        icon: material/weather-night
+        name: 切换深色模式
+    - scheme: slate
+      primary: indigo
+      accent: amber
+      toggle:
+        icon: material/weather-sunny
+        name: 切换浅色模式
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+  icon:
+    logo: material/alpha-f-box-outline
+    repo: fontawesome/brands/github
+
+nav:
+  - 首页: index.md
+  - 快速开始:
+    - 安装: getting-started/installation.md
+    - 一分钟上手: getting-started/quickstart.md
+    - 符号体系: getting-started/symbols.md
+    - OODA 循环: getting-started/ooda.md
+  - 组件:
+    - Streamlit 插件: components/streamlit.md
+    - LangChain 集成: components/langchain.md
+    - QuickRAG: components/rag.md
+    - 盗火者研讨厅: components/seminar.md
+  - 论文:
+    - 组织形态学与多智能体协作: papers/paper-01.md
+    - 研讨厅架构: papers/paper-02.md
+  - 指南:
+    - 项目语境: guide/context.md
+    - 应用场景: guide/scenarios.md
+    - 架构决策: guide/decisions.md
+    - 设计模式: guide/patterns.md
+    - 路线图: guide/roadmap.md
+    - 治理: guide/govern.md
+  - 博客:
+    - 为什么 AI 工具需要能力菜单: blog/capability-menu.md
+  - 关于: about.md
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - footnotes
+  - meta
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.betterem
+  - pymdownx.keys
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - tables
+  - toc:
+      permalink: true
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/fanLang-1/FanLang
+    - icon: fontawesome/brands/python
+      link: https://pypi.org/project/pyfanlang/
+
+copyright: Copyright &copy; 2026 FanLang Project — MIT License
